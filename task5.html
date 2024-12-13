@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>AITAM College Fest Registration Form</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <br>
+            <label for="studentimage">Student Image:</label>
+            <input type="file" name="studentimage" id="studentimage" required>
+            <br>
+            <label for="fullname">Student Name:</label>
+            <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+            <br>
+            <label for="fathersname">Father's Name:</label>
+            <input type="text" name="fathersname" id="fathersname" placeholder="Father's Full Name" required>
+            <br>
+            <label for="mothersname">Mother's Name:</label>
+            <input type="text" name="mothersname" id="mothersname" placeholder="Mother's Full Name" required>
+            <br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+            <br>
+            <label for="DOB">Date of Birth:</label>
+            <input type="date" name="DOB" id="DOB" required>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="email@xyz.com" required>
+            <br>
+            <label for="level">Level:</label>
+            <select name="level" id="level">
+                <option value="highschool">High School</option>
+                <option value="bachelors">Bachelors</option>
+                <option value="masters">Masters</option>
+                <option value="phd">PhD</option>
+            </select>
+            <br>
+            <label for="department">Department:</label>
+            <select name="department" id="department">
+                <option value="electrical">Electrical Engineering</option>
+                <option value="computer">Computer Engineering</option>
+                <option value="software">Software Engineering</option>
+                <option value="civil">Civil Engineering</option>
+            </select>
+            <br>
+            <label for="phonenumber">Tel/Mobile:</label>
+            <input type="tel" name="phonenumber" id="phonenumber" placeholder="XXX XXX XXXX" required>
+            <br>
+            <select>
+            <option value="Day Scholar">Day Scholar</option>
+            <option value="Hosteller">Hosteller</option>
+        </select>
+        <br>
+        </fieldset>
+        <fieldset>
+            <legend>Permanent Address</legend>
+            <br>
+            <label for="pstate">State:</label>
+            <input type="text" name="pstate" id="pstate" placeholder="State" required>
+            <br>
+            <label for="pcity">City:</label>
+            <input type="text" name="pcity" id="pcity" placeholder="City" required>
+            <br>
+            <label for="pzip">Zip Code:</label>
+            <input type="number" name="pzip" id="pzip" placeholder="Zip Code" required>
+            <br>
+            <label for="pphonenumber">Tel/Mobile:</label>
+            <input type="tel" name="pphonenumber" id="pphonenumber" placeholder="XXX XXX XXXX" required>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Temporary Address</legend>
+            <br>
+            <label><input type="checkbox" name="sameaspermanent" id="sameaspermanent"> Same as Permanent Address</label>
+            <br>
+            <label for="tstate">State:</label>
+            <input type="text" name="tstate" id="tstate" placeholder="State" required>
+            <br>
+            <label for="tcity">City:</label>
+            <input type="text" name="tcity" id="tcity" placeholder="City" required>
+            <br>
+            <label for="tzip">Zip Code:</label>
+            <input type="number" name="tzip" id="tzip" placeholder="Zip Code" required>
+            <br>
+            <label for="tphonenumber">Tel/Mobile:</label>
+            <input type="tel" name="tphonenumber" id="tphonenumber" placeholder="XXX XXX XXXX" required>
+            <br>
+        </fieldset>
+        <fieldset>
+            <br>
+            <legend>Event Details</legend>
+            <label for="event">Select Event:</label>
+        <select id="event" name="event">
+            <option value="Conference">Conference</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Seminar">Seminar</option>
+            <option value="Other">Other</option>
+        </select>
+    <label for="date">Date of Event:</label>
+    <input type="date" id="date" name="date" required><br><br>
+    
+    <label for="time">Time of Event:</label>
+    <input type="time" id="time" name="time" required><br><br>
+    
+    <label for="accommodation">Accommodation:</label>
+    <select id="accommodation" name="accommodation">
+        <option value="Day Scholar">Day Scholar</option>
+        <option value="Hosteller">Hosteller</option>
+    </select><br><br>
+    <label for="passcollection">Pass Collection:</label>
+    <input type="file" id="passcollection" name="passcollection"><br><br>
+    
+    <label for="idproof">ID Proof:</label>
+    <input type="file" id="idproof" name="idproof"><br><br>
+    
+    <label for="feepayment">Fee Payment:</label>
+    <input type="file" id="feepayment" name="feepayment"><br><br>
+    
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the terms and conditions.</label>
+        </fieldset>
+        <button class="register" type="submit">Register</button>
+        <br>
+        <input type="reset" value="click here to reset">
+    </form>
+</body>
+</html>
